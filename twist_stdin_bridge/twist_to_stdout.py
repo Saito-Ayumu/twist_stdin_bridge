@@ -11,6 +11,7 @@ from .parse import format_vw_csv, Vw
 
 
 class TwistToStdout(Node):
+
     def __init__(self):
         super().__init__('twist_to_stdout')
         self.declare_parameter('topic', '/cmd_vel')

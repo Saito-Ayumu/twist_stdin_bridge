@@ -11,6 +11,7 @@ from .parse import parse_vw_line
 
 
 class StdinToTwist(Node):
+
     def __init__(self):
         super().__init__('stdin_to_twist')
         self.declare_parameter('topic', '/cmd_vel')
