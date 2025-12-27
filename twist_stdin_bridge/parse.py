@@ -24,5 +24,5 @@ def parse_vw_line(line: str) -> Vw:
 
 
 def format_vw_csv(vw: Vw) -> str:
-    """Format Vw as CSV 'vx,wz\\n' for STDOUT."""
+    """Format Vw as CSV for STDOUT."""
     return f'{vw.vx:.6f},{vw.wz:.6f}\n'

@@ -1,0 +1,18 @@
+name: ci
+on: [push, pull_request]
+
+jobs:
+  ros_ci:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        ros_distro: [humble]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ros-tooling/setup-ros@v0.7
+        with:
+          required-ros-distributions: ${{ matrix.ros_distro }}
+      - uses: ros-tooling/action-ros-ci@v0.4
+        with:
+          package-name: twist_stdin_bridge
+          target-ros2-distro: ${{ matrix.ros_distro }}
