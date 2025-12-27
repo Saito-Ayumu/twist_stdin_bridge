@@ -5,7 +5,7 @@
   <version>0.0.0</version>
   <description>TODO: Package description</description>
   <maintainer email="saito.ayumu1002@icoud.com">saito</maintainer>
-  <license>MIT</license>
+  <license>BSD-3-Clause</license>
 
   <depend>rclpy</depend>
   <depend>geometry_msgs</depend>
