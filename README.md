@@ -1,31 +1,31 @@
 # twist_stdin_bridge
 
-`twist_stdin_bridge` は、UNIXの標準入出力（パイプ）と ROS 2 の `geometry_msgs/msg/Twist` を橋渡しし、ROS 2 ノードを新しく書かなくても `/cmd_vel` を入出力できるようにします。
+`twist_stdin_bridge` は、UNIX の標準入出力（パイプ）と ROS 2 の `geometry_msgs/msg/Twist` を橋渡しし、ROS 2 ノードを新しく書かなくても `/cmd_vel` を入出力できるようにします。
 
 デバッグやスクリプト化に便利です：
-- STDINから `/cmd_vel` をpublish（手入力や生成した数値列をそのまま送信）
-- `/cmd_vel` を機械可読なCSVとしてSTDOUTに出力し、UNIXツールでログ保存・解析が可能
+- STDIN から `/cmd_vel` を publish（手入力や生成した数値列をそのまま送信）
+- `/cmd_vel` を機械可読な CSV として STDOUT に出力し、UNIX ツールでログ保存・解析が可能
 
-## Nodes
+## ノード
 
 ### stdin_to_twist
-Publish Twist messages from STDIN.
+STDIN から Twist メッセージを読み取り、`/cmd_vel` に publish します。
 
-- Publishes: `/cmd_vel` (`geometry_msgs/msg/Twist`)
-- Input (STDIN): one message per line: `vx wz` or `vx,wz`
-- Output:
-  - nothing to STDOUT
-  - parse errors are printed to STDERR (STDOUT is kept clean)
+- Publish 先: `/cmd_vel`（`geometry_msgs/msg/Twist`）
+- 入力（STDIN）: 1 行につき 1 メッセージ。形式は `vx wz` または `vx,wz`
+- 出力:
+  - STDOUT には何も出しません
+  - パースエラーは STDERR に出力します（STDOUT は機械処理用にクリーンに保ちます）
 
 ### twist_to_stdout
-Print Twist messages to STDOUT.
+`/cmd_vel` を購読し、STDOUT に CSV として出力します。
 
-- Subscribes: `/cmd_vel` (`geometry_msgs/msg/Twist`)
-- Output (STDOUT): CSV `vx,wz` + newline (numbers only)
+- Subscribe 先: `/cmd_vel`（`geometry_msgs/msg/Twist`）
+- 出力（STDOUT）: `vx,wz` + 改行（数値のみの CSV）
 
-## Usage
+## 使い方
 
-Terminal A (print `/cmd_vel`):
+ターミナルA（`/cmd_vel` を表示）:
 ```bash
 $ source ~/ros2_ws/install/setup.bash
 $ ros2 run twist_stdin_bridge twist_to_stdout
