@@ -1,10 +1,10 @@
 # twist_stdin_bridge
 
-Bridge UNIX pipelines and ROS 2 `geometry_msgs/msg/Twist`.
+`twist_stdin_bridge` は、UNIXの標準入出力（パイプ）と ROS 2 の `geometry_msgs/msg/Twist` を橋渡しし、ROS 2 ノードを新しく書かなくても `/cmd_vel` を入出力できるようにします。
 
-This package provides small CLI-style ROS 2 nodes:
-- publish `/cmd_vel` from STDIN
-- print `/cmd_vel` to STDOUT (machine-readable CSV)
+デバッグやスクリプト化に便利です：
+- STDINから `/cmd_vel` をpublish（手入力や生成した数値列をそのまま送信）
+- `/cmd_vel` を機械可読なCSVとしてSTDOUTに出力し、UNIXツールでログ保存・解析が可能
 
 ## Nodes
 
@@ -14,7 +14,7 @@ Publish Twist messages from STDIN.
 - Publishes: `/cmd_vel` (`geometry_msgs/msg/Twist`)
 - Input (STDIN): one message per line: `vx wz` or `vx,wz`
 - Output:
-  - none to STDOUT
+  - nothing to STDOUT
   - parse errors are printed to STDERR (STDOUT is kept clean)
 
 ### twist_to_stdout
@@ -25,7 +25,7 @@ Print Twist messages to STDOUT.
 
 ## Usage
 
-Terminal A:
+Terminal A (print `/cmd_vel`):
 ```bash
 $ source ~/ros2_ws/install/setup.bash
 $ ros2 run twist_stdin_bridge twist_to_stdout
