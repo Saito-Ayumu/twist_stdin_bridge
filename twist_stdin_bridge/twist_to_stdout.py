@@ -29,7 +29,11 @@ def main() -> None:
     rclpy.init()
     node = TwistToStdout()
     try:
-        rclpy.spin(node)
+        try:
+            rclpy.spin(node)
+        except KeyboardInterrupt:
+            pass
     finally:
         node.destroy_node()
-        rclpy.shutdown()
+        if rclpy.ok():
+            rclpy.shutdown()

@@ -21,11 +21,11 @@ Publish Twist messages from STDIN.
 Print Twist messages to STDOUT.
 
 - Subscribes: `/cmd_vel` (`geometry_msgs/msg/Twist`)
-- Output (STDOUT): `vx,wz` + newline (numbers only, CSV)
+- Output (STDOUT): CSV `vx,wz` + newline (numbers only)
 
 ## Usage
 
-Terminal A (print Twist):
+Terminal A:
 ```bash
 $ source ~/ros2_ws/install/setup.bash
 $ ros2 run twist_stdin_bridge twist_to_stdout
