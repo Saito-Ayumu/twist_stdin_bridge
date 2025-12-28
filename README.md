@@ -55,5 +55,6 @@ $ printf "bad\n0.1 0.2\n" | ros2 run twist_stdin_bridge stdin_to_twist 1>/dev/nu
 ```
 
 ### STDERR の出力例
+```text
 parse_error: need two values: vx wz
 
