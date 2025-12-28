@@ -32,23 +32,27 @@ STDIN から Twist メッセージを読み取り、`/cmd_vel` に publish し�
 ```bash
 $ source ~/ros2_ws/install/setup.bash
 $ ros2 run twist_stdin_bridge twist_to_stdout
+```
 
-ターミナルB（送信側）
-
+### ターミナルB（送信側）
 別のターミナルを開いて、以下を実行して数値を入力します（各行で Enter）:
-
+```bash
 $ source ~/ros2_ws/install/setup.bash
 $ ros2 run twist_stdin_bridge stdin_to_twist
 0.1 0.2
 0.0 -0.5
+```
 
-ターミナルAの出力例
+### ターミナルAの出力例
+
 0.100000,0.200000
 0.000000,-0.500000
 
-パースエラー例（ターミナルBの STDERR に出ます）
+### パースエラー例（ターミナルBの STDERR に出ます）
+```bash
 $ printf "bad\n0.1 0.2\n" | ros2 run twist_stdin_bridge stdin_to_twist 1>/dev/null
+```
 
-STDERR の出力例
+### STDERR の出力例
 parse_error: need two values: vx wz
 
