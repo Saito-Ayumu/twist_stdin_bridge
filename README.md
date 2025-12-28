@@ -31,16 +31,22 @@ $ source ~/ros2_ws/install/setup.bash
 $ ros2 run twist_stdin_bridge twist_to_stdout
 
 ターミナルB ('/cmd_vel'に送信、手入力):
+```bash
 $ source ~/ros2_ws/install/setup.bash
 $ ros2 run twist_stdin_bridge stdin_to_twist
 0.1 0.2                                         ←を手入力
 0.0 -0.5
 
 ターミナルAの出力例:
+text
 0.100000,0.200000
 0.000000,-0.500000
 
 パースエラー例（ターミナルBの STDERR に出ます）:
+'''bash
 $ printf "bad\n0.1 0.2\n" | ros2 run twist_stdin_bridge stdin_to_twist 1>/dev/null
+
+STDERR の出力例
+text
 parse_error: need two values: vx wz
 
