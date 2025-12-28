@@ -44,9 +44,10 @@ $ ros2 run twist_stdin_bridge stdin_to_twist
 ```
 
 ### ターミナルAの出力例
-
+```text
 0.100000,0.200000
 0.000000,-0.500000
+```
 
 ### パースエラー例（ターミナルBの STDERR に出ます）
 ```bash
