@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="1.416" timestamp="2026-01-03T21:36:45.999501" hostname="localhost"><testcase classname="twist_stdin_bridge" name="test.test_io" time="0.000"><error message="collection failure">/usr/lib/python3/dist-packages/_pytest/python.py:617: in _importtestmodule
+    mod = import_path(self.path, mode=importmode, root=self.config.rootpath)
+/usr/lib/python3/dist-packages/_pytest/pathlib.py:567: in import_path
+    importlib.import_module(module_name)
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+&lt;frozen importlib._bootstrap&gt;:1387: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1360: in _find_and_load
+    ???
+&lt;frozen importlib._bootstrap&gt;:1331: in _find_and_load_unlocked
+    ???
+&lt;frozen importlib._bootstrap&gt;:935: in _load_unlocked
+    ???
+/usr/lib/python3/dist-packages/_pytest/assertion/rewrite.py:186: in exec_module
+    exec(co, module.__dict__)
+test/test_io.py:9: in &lt;module&gt;
+    from twist_stdin_bridge.twist_to_stdout import twist_to_csv_line
+E     File "/home/saito/ros2_ws/src/twist_stdin_bridge/twist_stdin_bridge/twist_to_stdout.py", line 51
+E       rclpy.shutdown()
+E   IndentationError: unexpected indent</error></testcase></testsuite></testsuites>

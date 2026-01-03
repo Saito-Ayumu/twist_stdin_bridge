@@ -1,0 +1,37 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: build/twist_stdin_bridge/.pytest_cache
+rootdir: /home/saito/ros2_ws/src/twist_stdin_bridge
+plugins: launch-testing-3.4.9, ament-lint-0.17.3, ament-pep257-0.17.3, ament-flake8-0.17.3, launch-testing-ros-0.26.10, ament-xmllint-0.17.3, ament-copyright-0.17.3, cov-4.1.0, colcon-core-0.20.1
+[1mcollecting ... [0m[1m
+collecting 0 items                                                             [0m[1m
+collected 12 items / 1 error                                                   [0m
+
+==================================== ERRORS ====================================
+[31m[1m_______________________ ERROR collecting test/test_io.py _______________________[0m
+[31m/usr/lib/python3/dist-packages/_pytest/python.py:617: in _importtestmodule
+    mod = import_path(self.path, mode=importmode, root=self.config.rootpath)
+/usr/lib/python3/dist-packages/_pytest/pathlib.py:567: in import_path
+    importlib.import_module(module_name)
+/usr/lib/python3.12/importlib/__init__.py:90: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+<frozen importlib._bootstrap>:1387: in _gcd_import
+    ???
+<frozen importlib._bootstrap>:1360: in _find_and_load
+    ???
+<frozen importlib._bootstrap>:1331: in _find_and_load_unlocked
+    ???
+<frozen importlib._bootstrap>:935: in _load_unlocked
+    ???
+/usr/lib/python3/dist-packages/_pytest/assertion/rewrite.py:186: in exec_module
+    exec(co, module.__dict__)
+test/test_io.py:9: in <module>
+    from twist_stdin_bridge.twist_to_stdout import twist_to_csv_line
+E     File "/home/saito/ros2_ws/src/twist_stdin_bridge/twist_stdin_bridge/twist_to_stdout.py", line 51
+E       rclpy.shutdown()
+E   IndentationError: unexpected indent[0m
+- generated xml file: /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml -
+[36m[1m=========================== short test summary info ============================[0m
+[31mERROR[0m test/test_io.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+[31m=============================== [31m[1m1 error[0m[31m in 1.41s[0m[31m ===============================[0m

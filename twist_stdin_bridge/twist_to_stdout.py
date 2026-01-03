@@ -48,6 +48,5 @@ def main(args=None) -> None:
         node.destroy_node()
         rclpy.try_shutdown()
 
-                rclpy.shutdown()
             except Exception:
                 pass

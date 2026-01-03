@@ -1,0 +1,39 @@
+[0.503s] Invoking command in '/home/saito/ros2_ws/src/twist_stdin_bridge': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml --junit-prefix=twist_stdin_bridge -o cache_dir=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[1.576s] [1m============================= test session starts ==============================[0m
+[1.576s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[1.596s] cachedir: build/twist_stdin_bridge/.pytest_cache
+[1.596s] rootdir: /home/saito/ros2_ws/src/twist_stdin_bridge
+[1.596s] plugins: launch-testing-3.4.9, ament-lint-0.17.3, ament-pep257-0.17.3, ament-flake8-0.17.3, launch-testing-ros-0.26.10, ament-xmllint-0.17.3, ament-copyright-0.17.3, cov-4.1.0, colcon-core-0.20.1
+[2.736s] [1mcollecting ... [0m[1m
+[2.924s] collecting 0 items                                                             [0m[1m
+[2.924s] collected 12 items / 1 error                                                   [0m
+[2.985s] 
+[2.986s] ==================================== ERRORS ====================================
+[2.986s] [31m[1m_______________________ ERROR collecting test/test_io.py _______________________[0m
+[2.987s] [31m/usr/lib/python3/dist-packages/_pytest/python.py:617: in _importtestmodule
+[2.987s]     mod = import_path(self.path, mode=importmode, root=self.config.rootpath)
+[2.987s] /usr/lib/python3/dist-packages/_pytest/pathlib.py:567: in import_path
+[2.987s]     importlib.import_module(module_name)
+[2.988s] /usr/lib/python3.12/importlib/__init__.py:90: in import_module
+[2.988s]     return _bootstrap._gcd_import(name[level:], package, level)
+[2.989s] <frozen importlib._bootstrap>:1387: in _gcd_import
+[2.989s]     ???
+[2.989s] <frozen importlib._bootstrap>:1360: in _find_and_load
+[2.989s]     ???
+[2.989s] <frozen importlib._bootstrap>:1331: in _find_and_load_unlocked
+[2.990s]     ???
+[2.990s] <frozen importlib._bootstrap>:935: in _load_unlocked
+[2.990s]     ???
+[2.990s] /usr/lib/python3/dist-packages/_pytest/assertion/rewrite.py:186: in exec_module
+[2.990s]     exec(co, module.__dict__)
+[2.990s] test/test_io.py:9: in <module>
+[2.990s]     from twist_stdin_bridge.twist_to_stdout import twist_to_csv_line
+[2.990s] E     File "/home/saito/ros2_ws/src/twist_stdin_bridge/twist_stdin_bridge/twist_to_stdout.py", line 51
+[2.991s] E       rclpy.shutdown()
+[2.991s] E   IndentationError: unexpected indent[0m
+[2.991s] - generated xml file: /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml -
+[2.991s] [36m[1m=========================== short test summary info ============================[0m
+[2.991s] [31mERROR[0m test/test_io.py
+[2.991s] !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+[2.991s] [31m=============================== [31m[1m1 error[0m[31m in 1.41s[0m[31m ===============================[0m
+[3.173s] Invoked command in '/home/saito/ros2_ws/src/twist_stdin_bridge' returned '2': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml --junit-prefix=twist_stdin_bridge -o cache_dir=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest

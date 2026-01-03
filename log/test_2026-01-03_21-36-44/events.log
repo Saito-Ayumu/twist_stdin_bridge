@@ -1,0 +1,74 @@
+[0.000000] (-) TimerEvent: {}
+[0.001384] (twist_stdin_bridge) JobQueued: {'identifier': 'twist_stdin_bridge', 'dependencies': OrderedDict({'twist_stdin_bridge': '/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge'})}
+[0.001504] (twist_stdin_bridge) JobStarted: {'identifier': 'twist_stdin_bridge'}
+[0.103669] (-) TimerEvent: {}
+[0.209185] (-) TimerEvent: {}
+[0.314775] (-) TimerEvent: {}
+[0.420297] (-) TimerEvent: {}
+[0.500609] (twist_stdin_bridge) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/saito/ros2_ws/src/twist_stdin_bridge', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'saito', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/saito/ros2_ws/install/person_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/saito', 'OLDPWD': '/home/saito/ros2_ws/src/twist_stdin_bridge', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/saito/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'saito', 'NAME': 'localhost', 'WSL_INTEROP': '/run/WSL/328_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.3.0_x64__8wekyb3d8bbwe:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Users/saito/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/saito/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/saito/AppData/Roaming/Programs/Zero Install:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/saito/ros2_ws/install/twist_stdin_bridge:/home/saito/ros2_ws/install/person_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/saito/ros2_ws/install/twist_stdin_bridge/lib/python3.12/site-packages:/home/saito/ros2_ws/install/person_msgs/lib/python3.12/site-packages:/home/saito/ros2_ws/install/mypkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/saito/ros2_ws/install/person_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': '', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml --junit-prefix=twist_stdin_bridge -o cache_dir=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/.pytest_cache'}, 'shell': False}
+[0.521257] (-) TimerEvent: {}
+[0.626710] (-) TimerEvent: {}
+[0.732200] (-) TimerEvent: {}
+[0.837710] (-) TimerEvent: {}
+[0.943006] (-) TimerEvent: {}
+[1.048400] (-) TimerEvent: {}
+[1.153787] (-) TimerEvent: {}
+[1.259223] (-) TimerEvent: {}
+[1.364699] (-) TimerEvent: {}
+[1.470073] (-) TimerEvent: {}
+[1.575445] (-) TimerEvent: {}
+[1.577072] (twist_stdin_bridge) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[1.577615] (twist_stdin_bridge) StdoutLine: {'line': b'platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0\n'}
+[1.596787] (twist_stdin_bridge) StdoutLine: {'line': b'cachedir: build/twist_stdin_bridge/.pytest_cache\n'}
+[1.597321] (twist_stdin_bridge) StdoutLine: {'line': b'rootdir: /home/saito/ros2_ws/src/twist_stdin_bridge\n'}
+[1.597425] (twist_stdin_bridge) StdoutLine: {'line': b'plugins: launch-testing-3.4.9, ament-lint-0.17.3, ament-pep257-0.17.3, ament-flake8-0.17.3, launch-testing-ros-0.26.10, ament-xmllint-0.17.3, ament-copyright-0.17.3, cov-4.1.0, colcon-core-0.20.1\n'}
+[1.679398] (-) TimerEvent: {}
+[1.780555] (-) TimerEvent: {}
+[1.882955] (-) TimerEvent: {}
+[1.988079] (-) TimerEvent: {}
+[2.093443] (-) TimerEvent: {}
+[2.198877] (-) TimerEvent: {}
+[2.304301] (-) TimerEvent: {}
+[2.408768] (-) TimerEvent: {}
+[2.513964] (-) TimerEvent: {}
+[2.619205] (-) TimerEvent: {}
+[2.725004] (-) TimerEvent: {}
+[2.737302] (twist_stdin_bridge) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[2.829335] (-) TimerEvent: {}
+[2.925424] (twist_stdin_bridge) StdoutLine: {'line': b'collecting 0 items                                                             \x1b[0m\x1b[1m\n'}
+[2.925827] (twist_stdin_bridge) StdoutLine: {'line': b'collected 12 items / 1 error                                                   \x1b[0m\n'}
+[2.929691] (-) TimerEvent: {}
+[2.986006] (twist_stdin_bridge) StdoutLine: {'line': b'\n'}
+[2.987118] (twist_stdin_bridge) StdoutLine: {'line': b'==================================== ERRORS ====================================\n'}
+[2.987547] (twist_stdin_bridge) StdoutLine: {'line': b'\x1b[31m\x1b[1m_______________________ ERROR collecting test/test_io.py _______________________\x1b[0m\n'}
+[2.987905] (twist_stdin_bridge) StdoutLine: {'line': b'\x1b[31m/usr/lib/python3/dist-packages/_pytest/python.py:617: in _importtestmodule\n'}
+[2.988247] (twist_stdin_bridge) StdoutLine: {'line': b'    mod = import_path(self.path, mode=importmode, root=self.config.rootpath)\n'}
+[2.988508] (twist_stdin_bridge) StdoutLine: {'line': b'/usr/lib/python3/dist-packages/_pytest/pathlib.py:567: in import_path\n'}
+[2.988732] (twist_stdin_bridge) StdoutLine: {'line': b'    importlib.import_module(module_name)\n'}
+[2.988945] (twist_stdin_bridge) StdoutLine: {'line': b'/usr/lib/python3.12/importlib/__init__.py:90: in import_module\n'}
+[2.989146] (twist_stdin_bridge) StdoutLine: {'line': b'    return _bootstrap._gcd_import(name[level:], package, level)\n'}
+[2.989891] (twist_stdin_bridge) StdoutLine: {'line': b'<frozen importlib._bootstrap>:1387: in _gcd_import\n'}
+[2.990064] (twist_stdin_bridge) StdoutLine: {'line': b'    ???\n'}
+[2.990211] (twist_stdin_bridge) StdoutLine: {'line': b'<frozen importlib._bootstrap>:1360: in _find_and_load\n'}
+[2.990351] (twist_stdin_bridge) StdoutLine: {'line': b'    ???\n'}
+[2.990662] (twist_stdin_bridge) StdoutLine: {'line': b'<frozen importlib._bootstrap>:1331: in _find_and_load_unlocked\n'}
+[2.990851] (twist_stdin_bridge) StdoutLine: {'line': b'    ???\n'}
+[2.991063] (twist_stdin_bridge) StdoutLine: {'line': b'<frozen importlib._bootstrap>:935: in _load_unlocked\n'}
+[2.991202] (twist_stdin_bridge) StdoutLine: {'line': b'    ???\n'}
+[2.991328] (twist_stdin_bridge) StdoutLine: {'line': b'/usr/lib/python3/dist-packages/_pytest/assertion/rewrite.py:186: in exec_module\n'}
+[2.991453] (twist_stdin_bridge) StdoutLine: {'line': b'    exec(co, module.__dict__)\n'}
+[2.991572] (twist_stdin_bridge) StdoutLine: {'line': b'test/test_io.py:9: in <module>\n'}
+[2.991697] (twist_stdin_bridge) StdoutLine: {'line': b'    from twist_stdin_bridge.twist_to_stdout import twist_to_csv_line\n'}
+[2.991814] (twist_stdin_bridge) StdoutLine: {'line': b'E     File "/home/saito/ros2_ws/src/twist_stdin_bridge/twist_stdin_bridge/twist_to_stdout.py", line 51\n'}
+[2.991933] (twist_stdin_bridge) StdoutLine: {'line': b'E       rclpy.shutdown()\n'}
+[2.992047] (twist_stdin_bridge) StdoutLine: {'line': b'E   IndentationError: unexpected indent\x1b[0m\n'}
+[2.992157] (twist_stdin_bridge) StdoutLine: {'line': b'- generated xml file: /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml -\n'}
+[2.992271] (twist_stdin_bridge) StdoutLine: {'line': b'\x1b[36m\x1b[1m=========================== short test summary info ============================\x1b[0m\n'}
+[2.992465] (twist_stdin_bridge) StdoutLine: {'line': b'\x1b[31mERROR\x1b[0m test/test_io.py\n'}
+[2.992598] (twist_stdin_bridge) StdoutLine: {'line': b'!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n'}
+[2.992725] (twist_stdin_bridge) StdoutLine: {'line': b'\x1b[31m=============================== \x1b[31m\x1b[1m1 error\x1b[0m\x1b[31m in 1.41s\x1b[0m\x1b[31m ===============================\x1b[0m\n'}
+[3.031676] (-) TimerEvent: {}
+[3.137217] (-) TimerEvent: {}
+[3.174180] (twist_stdin_bridge) CommandEnded: {'returncode': 2}
+[3.174748] (twist_stdin_bridge) JobEnded: {'identifier': 'twist_stdin_bridge', 'rc': 2}
+[3.186229] (-) EventReactorShutdown: {}
