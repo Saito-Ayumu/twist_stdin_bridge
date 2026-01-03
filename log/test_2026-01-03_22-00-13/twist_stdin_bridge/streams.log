@@ -1,0 +1,87 @@
+[0.778s] Invoking command in '/home/saito/ros2_ws/src/twist_stdin_bridge': AMENT_PREFIX_PATH=/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml --junit-prefix=twist_stdin_bridge -o cache_dir=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge:/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[1.801s] [1m============================= test session starts ==============================[0m
+[1.802s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[1.809s] cachedir: build/twist_stdin_bridge/.pytest_cache
+[1.810s] rootdir: /home/saito/ros2_ws/src/twist_stdin_bridge
+[1.810s] plugins: launch-testing-3.4.9, ament-lint-0.17.3, ament-pep257-0.17.3, ament-flake8-0.17.3, launch-testing-ros-0.26.10, ament-xmllint-0.17.3, ament-copyright-0.17.3, cov-4.1.0, colcon-core-0.20.1
+[2.903s] [1mcollecting ... [0m[1m
+[2.919s] collecting 0 items                                                             [0m[1m
+[2.920s] collected 14 items                                                             [0m
+[2.920s] 
+[2.936s] test/test_copyright.py [33ms[0m[32m                                                 [  7%][0m
+[3.629s] test/test_flake8.py [31mF[0m[31m                                                    [ 14%][0m
+[3.633s] test/test_io.py [32m.[0m[32m.[0m[31m                                                       [ 28%][0m
+[3.651s] test/test_parse.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31m                                             [ 92%][0m
+[3.805s] test/test_pep257.py [32m.[0m[31m                                                    [100%][0m
+[3.807s] 
+[3.807s] =================================== FAILURES ===================================
+[3.807s] [31m[1m_________________________________ test_flake8 __________________________________[0m
+[3.807s] [1m[31mtest/test_flake8.py[0m:23: in test_flake8
+[3.889s]     [94massert[39;49;00m rc == [94m0[39;49;00m, \
+[3.889s] [1m[31mE   AssertionError: Found 5 code style errors / warnings:[0m
+[3.889s] [1m[31mE     ./build/twist_stdin_bridge/prefix_override/sitecustomize.py:4:100: E501 line too long (106 > 99 characters)[0m
+[3.889s] [1m[31mE     ./twist_stdin_bridge/stdin_to_twist.py:53:1: E302 expected 2 blank lines, found 1[0m
+[3.890s] [1m[31mE     ./twist_stdin_bridge/twist_to_stdout.py:40:1: E302 expected 2 blank lines, found 1[0m
+[3.890s] [1m[31mE     ./twist_stdin_bridge/twist_to_stdout.py:49:36: Q000 Double quotes found but single quotes preferred[0m
+[3.890s] [1m[31mE     ./twist_stdin_bridge/twist_to_stdout.py:56:1: W391 blank line at end of file[0m
+[3.890s] [1m[31mE   assert 1 == 0[0m
+[3.890s] ----------------------------- Captured stdout call -----------------------------
+[3.891s] 
+[3.891s] ./build/twist_stdin_bridge/prefix_override/sitecustomize.py:4:100: E501 line too long (106 > 99 characters)
+[3.891s]     sys.prefix = sys.exec_prefix = '/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge'
+[3.891s]                                                                                                    ^
+[3.892s] 
+[3.892s] ./twist_stdin_bridge/stdin_to_twist.py:53:1: E302 expected 2 blank lines, found 1
+[3.892s] def run(self) -> int:
+[3.892s] ^
+[3.892s] 
+[3.892s] ./twist_stdin_bridge/twist_to_stdout.py:40:1: E302 expected 2 blank lines, found 1
+[3.892s] def main(args=None) -> None:
+[3.893s] ^
+[3.893s] 
+[3.893s] ./twist_stdin_bridge/twist_to_stdout.py:49:36: Q000 Double quotes found but single quotes preferred
+[3.893s]         if e.__class__.__name__ == "ExternalShutdownException":
+[3.893s]                                    ^
+[3.893s] 
+[3.893s] ./twist_stdin_bridge/twist_to_stdout.py:56:1: W391 blank line at end of file
+[3.894s] 
+[3.894s] ^
+[3.894s] 
+[3.894s] 2     E302 expected 2 blank lines, found 1
+[3.895s] 1     E501 line too long (106 > 99 characters)
+[3.895s] 1     Q000 Double quotes found but single quotes preferred
+[3.896s] 1     W391 blank line at end of file
+[3.896s] 
+[3.896s] 14 files checked
+[3.896s] 5 errors
+[3.897s] 
+[3.897s] 'E'-type errors: 3
+[3.897s] 'Q'-type errors: 1
+[3.897s] 'W'-type errors: 1
+[3.898s] 
+[3.898s] Checked files:
+[3.898s] 
+[3.898s] * ./setup.py
+[3.898s] * ./build/twist_stdin_bridge/setup.py
+[3.899s] * ./build/twist_stdin_bridge/prefix_override/sitecustomize.py
+[3.899s] * ./test/test_flake8.py
+[3.899s] * ./test/test_parse.py
+[3.899s] * ./test/test_io.py
+[3.899s] * ./test/test_pep257.py
+[3.899s] * ./test/test_copyright.py
+[3.899s] * ./twist_stdin_bridge/twist_to_stdout.py
+[3.900s] * ./twist_stdin_bridge/stdin_to_twist.py
+[3.900s] * ./twist_stdin_bridge/__init__.py
+[3.900s] * ./twist_stdin_bridge/parse.py
+[3.900s] * ./install/_local_setup_util_sh.py
+[3.900s] * ./install/_local_setup_util_ps1.py
+[3.901s] [33m=============================== warnings summary ===============================[0m
+[3.901s] test/test_flake8.py: 14 warnings
+[3.901s]   Warning: This process (pid=3208) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[3.901s] 
+[3.901s] -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[3.902s] - generated xml file: /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml -
+[3.902s] [36m[1m=========================== short test summary info ============================[0m
+[3.902s] [31mFAILED[0m test/test_flake8.py::[1mtest_flake8[0m - AssertionError: Found 5 code style errors / warnings:
+[3.902s] [31m============= [31m[1m1 failed[0m, [32m12 passed[0m, [33m1 skipped[0m, [33m14 warnings[0m[31m in 2.09s[0m[31m =============[0m
+[4.081s] Invoked command in '/home/saito/ros2_ws/src/twist_stdin_bridge' returned '1': AMENT_PREFIX_PATH=/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml --junit-prefix=twist_stdin_bridge -o cache_dir=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge:/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

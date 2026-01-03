@@ -37,6 +37,7 @@ class TwistToStdout(Node):
         sys.stdout.write(twist_to_csv_line(msg) + '\n')
         sys.stdout.flush()
 
+
 def main(args=None) -> None:
     rclpy.init(args=args)
     node = TwistToStdout()
@@ -53,4 +54,3 @@ def main(args=None) -> None:
     finally:
         node.destroy_node()
         rclpy.try_shutdown()
-

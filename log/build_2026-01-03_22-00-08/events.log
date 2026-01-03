@@ -1,0 +1,63 @@
+[0.000000] (-) TimerEvent: {}
+[0.000642] (twist_stdin_bridge) JobQueued: {'identifier': 'twist_stdin_bridge', 'dependencies': OrderedDict()}
+[0.002280] (twist_stdin_bridge) JobStarted: {'identifier': 'twist_stdin_bridge'}
+[0.101986] (-) TimerEvent: {}
+[0.207378] (-) TimerEvent: {}
+[0.312680] (-) TimerEvent: {}
+[0.417998] (-) TimerEvent: {}
+[0.520153] (-) TimerEvent: {}
+[0.625651] (-) TimerEvent: {}
+[0.728269] (-) TimerEvent: {}
+[0.833778] (-) TimerEvent: {}
+[0.939346] (-) TimerEvent: {}
+[1.044484] (-) TimerEvent: {}
+[1.149807] (-) TimerEvent: {}
+[1.255148] (-) TimerEvent: {}
+[1.357680] (-) TimerEvent: {}
+[1.461635] (-) TimerEvent: {}
+[1.567358] (-) TimerEvent: {}
+[1.672713] (-) TimerEvent: {}
+[1.778016] (-) TimerEvent: {}
+[1.883377] (-) TimerEvent: {}
+[1.988755] (-) TimerEvent: {}
+[2.094208] (-) TimerEvent: {}
+[2.156505] (twist_stdin_bridge) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build', '--no-deps', 'symlink_data'], 'cwd': '/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'saito', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/saito/ros2_ws/install/person_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/saito', 'OLDPWD': '/home/saito/ros2_ws/src/twist_stdin_bridge/twist_stdin_bridge', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/saito/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'saito', 'NAME': 'localhost', 'WSL_INTEROP': '/run/WSL/328_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.6.3.0_x64__8wekyb3d8bbwe:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Users/saito/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/saito/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/saito/AppData/Roaming/Programs/Zero Install:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/saito/ros2_ws/install/twist_stdin_bridge:/home/saito/ros2_ws/install/person_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages:/home/saito/ros2_ws/install/twist_stdin_bridge/lib/python3.12/site-packages:/home/saito/ros2_ws/install/person_msgs/lib/python3.12/site-packages:/home/saito/ros2_ws/install/mypkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/saito/ros2_ws/install/person_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': ''}, 'shell': False}
+[2.194472] (-) TimerEvent: {}
+[2.299701] (-) TimerEvent: {}
+[2.405072] (-) TimerEvent: {}
+[2.510561] (-) TimerEvent: {}
+[2.615972] (-) TimerEvent: {}
+[2.721295] (-) TimerEvent: {}
+[2.825050] (-) TimerEvent: {}
+[2.847711] (twist_stdin_bridge) StdoutLine: {'line': b'running develop\n'}
+[2.928929] (-) TimerEvent: {}
+[3.034136] (-) TimerEvent: {}
+[3.139697] (-) TimerEvent: {}
+[3.204132] (twist_stdin_bridge) StdoutLine: {'line': b'running egg_info\n'}
+[3.204718] (twist_stdin_bridge) StdoutLine: {'line': b'creating twist_stdin_bridge.egg-info\n'}
+[3.238387] (twist_stdin_bridge) StdoutLine: {'line': b'writing twist_stdin_bridge.egg-info/PKG-INFO\n'}
+[3.239388] (twist_stdin_bridge) StdoutLine: {'line': b'writing dependency_links to twist_stdin_bridge.egg-info/dependency_links.txt\n'}
+[3.239789] (-) TimerEvent: {}
+[3.240271] (twist_stdin_bridge) StdoutLine: {'line': b'writing entry points to twist_stdin_bridge.egg-info/entry_points.txt\n'}
+[3.240859] (twist_stdin_bridge) StdoutLine: {'line': b'writing requirements to twist_stdin_bridge.egg-info/requires.txt\n'}
+[3.241319] (twist_stdin_bridge) StdoutLine: {'line': b'writing top-level names to twist_stdin_bridge.egg-info/top_level.txt\n'}
+[3.242388] (twist_stdin_bridge) StdoutLine: {'line': b"writing manifest file 'twist_stdin_bridge.egg-info/SOURCES.txt'\n"}
+[3.310039] (twist_stdin_bridge) StdoutLine: {'line': b"reading manifest file 'twist_stdin_bridge.egg-info/SOURCES.txt'\n"}
+[3.310996] (twist_stdin_bridge) StdoutLine: {'line': b"writing manifest file 'twist_stdin_bridge.egg-info/SOURCES.txt'\n"}
+[3.341479] (-) TimerEvent: {}
+[3.342075] (twist_stdin_bridge) StdoutLine: {'line': b'running build_ext\n'}
+[3.343022] (twist_stdin_bridge) StdoutLine: {'line': b'Creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist-stdin-bridge.egg-link (link to .)\n'}
+[3.344862] (twist_stdin_bridge) StdoutLine: {'line': b'Installing stdin_to_twist script to /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/twist_stdin_bridge\n'}
+[3.346201] (twist_stdin_bridge) StdoutLine: {'line': b'Installing twist_to_stdout script to /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/twist_stdin_bridge\n'}
+[3.346721] (twist_stdin_bridge) StdoutLine: {'line': b'\n'}
+[3.347019] (twist_stdin_bridge) StdoutLine: {'line': b'Installed /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge\n'}
+[3.347619] (twist_stdin_bridge) StdoutLine: {'line': b'running symlink_data\n'}
+[3.348297] (twist_stdin_bridge) StdoutLine: {'line': b'creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index\n'}
+[3.348979] (twist_stdin_bridge) StdoutLine: {'line': b'creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index/resource_index\n'}
+[3.349109] (twist_stdin_bridge) StdoutLine: {'line': b'creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index/resource_index/packages\n'}
+[3.349249] (twist_stdin_bridge) StdoutLine: {'line': b'symbolically linking /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/resource/twist_stdin_bridge -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index/resource_index/packages\n'}
+[3.349466] (twist_stdin_bridge) StdoutLine: {'line': b'symbolically linking /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/package.xml -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/twist_stdin_bridge\n'}
+[3.410397] (twist_stdin_bridge) CommandEnded: {'returncode': 0}
+[3.442594] (-) TimerEvent: {}
+[3.453398] (twist_stdin_bridge) JobEnded: {'identifier': 'twist_stdin_bridge', 'rc': 0}
+[3.455783] (-) EventReactorShutdown: {}

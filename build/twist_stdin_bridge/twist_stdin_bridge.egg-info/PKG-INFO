@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: twist-stdin-bridge
+Version: 0.0.1
+Summary: Bridge STDIN/STDOUT pipelines and ROS 2 Twist messages.
+Maintainer: Ayumu Saito
+Maintainer-email: saito.ayumu1002@icoud.com
+License: BSD-3-Clause

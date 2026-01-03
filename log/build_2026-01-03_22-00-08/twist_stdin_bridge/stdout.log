@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating twist_stdin_bridge.egg-info
+writing twist_stdin_bridge.egg-info/PKG-INFO
+writing dependency_links to twist_stdin_bridge.egg-info/dependency_links.txt
+writing entry points to twist_stdin_bridge.egg-info/entry_points.txt
+writing requirements to twist_stdin_bridge.egg-info/requires.txt
+writing top-level names to twist_stdin_bridge.egg-info/top_level.txt
+writing manifest file 'twist_stdin_bridge.egg-info/SOURCES.txt'
+reading manifest file 'twist_stdin_bridge.egg-info/SOURCES.txt'
+writing manifest file 'twist_stdin_bridge.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist-stdin-bridge.egg-link (link to .)
+Installing stdin_to_twist script to /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/twist_stdin_bridge
+Installing twist_to_stdout script to /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/twist_stdin_bridge
+
+Installed /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge
+running symlink_data
+creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index
+creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index/resource_index
+creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index/resource_index/packages
+symbolically linking /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/resource/twist_stdin_bridge -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index/resource_index/packages
+symbolically linking /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/package.xml -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/twist_stdin_bridge

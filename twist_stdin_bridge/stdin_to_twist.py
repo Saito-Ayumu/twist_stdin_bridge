@@ -50,7 +50,7 @@ class StdinToTwist(Node):
         while self._pub.get_subscription_count() == 0 and (time.time() - start) < timeout_sec:
             rclpy.spin_once(self, timeout_sec=0.1)
 
-def run(self) -> int:
+    def run(self) -> int:
     """Read STDIN lines and publish Twist messages until EOF."""
     self.wait_for_subscriber(timeout_sec=2.0)
 

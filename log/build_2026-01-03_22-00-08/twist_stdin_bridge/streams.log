@@ -1,0 +1,25 @@
+[2.156s] Invoking command in '/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge': PYTHONPATH=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build --no-deps symlink_data
+[2.845s] running develop
+[3.201s] running egg_info
+[3.202s] creating twist_stdin_bridge.egg-info
+[3.236s] writing twist_stdin_bridge.egg-info/PKG-INFO
+[3.237s] writing dependency_links to twist_stdin_bridge.egg-info/dependency_links.txt
+[3.237s] writing entry points to twist_stdin_bridge.egg-info/entry_points.txt
+[3.238s] writing requirements to twist_stdin_bridge.egg-info/requires.txt
+[3.238s] writing top-level names to twist_stdin_bridge.egg-info/top_level.txt
+[3.240s] writing manifest file 'twist_stdin_bridge.egg-info/SOURCES.txt'
+[3.307s] reading manifest file 'twist_stdin_bridge.egg-info/SOURCES.txt'
+[3.308s] writing manifest file 'twist_stdin_bridge.egg-info/SOURCES.txt'
+[3.339s] running build_ext
+[3.340s] Creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist-stdin-bridge.egg-link (link to .)
+[3.342s] Installing stdin_to_twist script to /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/twist_stdin_bridge
+[3.343s] Installing twist_to_stdout script to /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/twist_stdin_bridge
+[3.344s] 
+[3.344s] Installed /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge
+[3.345s] running symlink_data
+[3.346s] creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index
+[3.346s] creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index/resource_index
+[3.346s] creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index/resource_index/packages
+[3.346s] symbolically linking /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/resource/twist_stdin_bridge -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index/resource_index/packages
+[3.347s] symbolically linking /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/package.xml -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/twist_stdin_bridge
+[3.408s] Invoked command in '/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge' returned '0': PYTHONPATH=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build --no-deps symlink_data

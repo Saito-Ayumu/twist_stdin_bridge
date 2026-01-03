@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+resource/twist_stdin_bridge
+twist_stdin_bridge/__init__.py
+twist_stdin_bridge/parse.py
+twist_stdin_bridge/stdin_to_twist.py
+twist_stdin_bridge/twist_to_stdout.py
+twist_stdin_bridge.egg-info/PKG-INFO
+twist_stdin_bridge.egg-info/SOURCES.txt
+twist_stdin_bridge.egg-info/dependency_links.txt
+twist_stdin_bridge.egg-info/entry_points.txt
+twist_stdin_bridge.egg-info/requires.txt
+twist_stdin_bridge.egg-info/top_level.txt
+twist_stdin_bridge.egg-info/zip-safe
