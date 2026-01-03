@@ -28,7 +28,6 @@ class TwistToStdout(Node):
         super().__init__('twist_to_stdout')
         self.declare_parameter('topic', '/cmd_vel')
         topic = self.get_parameter('topic').get_parameter_value().string_value
-
         self._sub = self.create_subscription(Twist, topic, self.cb, 10)
 
     def cb(self, msg: Twist) -> None:
@@ -52,3 +51,4 @@ def main(args=None) -> None:
     finally:
         node.destroy_node()
         rclpy.try_shutdown()
+
