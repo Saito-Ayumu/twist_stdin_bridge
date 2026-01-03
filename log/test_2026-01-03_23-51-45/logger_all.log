@@ -1,0 +1,59 @@
+[1.025s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'test', '--packages-select', 'twist_stdin_bridge']
+[1.025s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='test', build_base='build', install_base='install', merge_install=False, test_result_base=None, retest_until_fail=0, retest_until_pass=0, abort_on_error=False, return_code_on_test_failure=False, executor='parallel', parallel_workers=14, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['twist_stdin_bridge'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], ctest_args=None, python_testing=None, pytest_args=None, pytest_with_coverage=False, unittest_args=None, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x79c52aa2f0b0>, verb_extension=<colcon_core.verb.test.TestVerb object at 0x79c52ab92db0>, main=<bound method TestVerb.main of <colcon_core.verb.test.TestVerb object at 0x79c52ab92db0>>)
+[1.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.203s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.203s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/saito/ros2_ws/src/twist_stdin_bridge'
+[1.203s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.204s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.300s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_python' and name 'twist_stdin_bridge'
+[1.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.312s] Level 5:colcon.colcon_core.verb:set package 'twist_stdin_bridge' test argument 'ctest_args' from command line to 'None'
+[1.312s] Level 5:colcon.colcon_core.verb:set package 'twist_stdin_bridge' test argument 'python_testing' from command line to 'None'
+[1.312s] Level 5:colcon.colcon_core.verb:set package 'twist_stdin_bridge' test argument 'pytest_args' from command line to 'None'
+[1.312s] Level 5:colcon.colcon_core.verb:set package 'twist_stdin_bridge' test argument 'pytest_with_coverage' from command line to 'False'
+[1.312s] Level 5:colcon.colcon_core.verb:set package 'twist_stdin_bridge' test argument 'unittest_args' from command line to 'None'
+[1.312s] Level 5:colcon.colcon_core.verb:set package 'twist_stdin_bridge' test argument 'retest_until_pass' from command line to '0'
+[1.312s] Level 5:colcon.colcon_core.verb:set package 'twist_stdin_bridge' test argument 'retest_until_fail' from command line to '0'
+[1.313s] DEBUG:colcon.colcon_core.verb.test:Testing package 'twist_stdin_bridge' with the following arguments: {'build_base': '/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge', 'ctest_args': None, 'install_base': '/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge', 'path': '/home/saito/ros2_ws/src/twist_stdin_bridge', 'pytest_args': None, 'pytest_with_coverage': False, 'python_testing': None, 'retest_until_fail': 0, 'retest_until_pass': 0, 'test_result_base': None, 'unittest_args': None}
+[1.313s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.316s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.317s] INFO:colcon.colcon_ros.task.ament_python.test:Testing ROS package in '/home/saito/ros2_ws/src/twist_stdin_bridge' with build type'ament_python'
+[1.318s] INFO:colcon.colcon_core.task.python.test:Testing Python package in '/home/saito/ros2_ws/src/twist_stdin_bridge'
+[1.337s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.337s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.338s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.358s] WARNING:colcon.colcon_core.shell:The following packages are in the workspace but haven't been built:
+- twist_stdin_bridge
+They are being used from the following locations instead:
+- /home/saito/ros2_ws/install/twist_stdin_bridge
+To suppress this warning ignore these packages in the workspace:
+--packages-ignore twist_stdin_bridge
+[1.855s] Level 1:colcon.colcon_core.task.python.test:test() by extension 'pytest'
+[1.856s] Level 1:colcon.colcon_core.task.python.test:test.step() by extension 'pytest'
+[1.859s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/saito/ros2_ws/src/twist_stdin_bridge': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml --junit-prefix=twist_stdin_bridge -o cache_dir=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[5.057s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.058s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.058s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.058s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.059s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/saito/ros2_ws/src/twist_stdin_bridge' returned '0': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml --junit-prefix=twist_stdin_bridge -o cache_dir=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[5.155s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[5.156s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.156s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.156s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.162s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[5.162s] DEBUG:colcon.colcon_core.event_reactor:joined thread

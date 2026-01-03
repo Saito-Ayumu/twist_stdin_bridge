@@ -1,0 +1,24 @@
+[0.541s] Invoking command in '/home/saito/ros2_ws/src/twist_stdin_bridge': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml --junit-prefix=twist_stdin_bridge -o cache_dir=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest
+[1.710s] [1m============================= test session starts ==============================[0m
+[1.711s] platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+[1.732s] cachedir: build/twist_stdin_bridge/.pytest_cache
+[1.732s] rootdir: /home/saito/ros2_ws/src/twist_stdin_bridge
+[1.732s] plugins: launch-testing-3.4.9, ament-lint-0.17.3, ament-pep257-0.17.3, ament-flake8-0.17.3, launch-testing-ros-0.26.10, ament-xmllint-0.17.3, ament-copyright-0.17.3, cov-4.1.0, colcon-core-0.20.1
+[2.906s] [1mcollecting ... [0m[1m
+[2.920s] collecting 0 items                                                             [0m[1m
+[2.920s] collected 14 items                                                             [0m
+[2.921s] 
+[2.934s] test/test_copyright.py [33ms[0m[32m                                                 [  7%][0m
+[3.426s] test/test_flake8.py [32m.[0m[33m                                                    [ 14%][0m
+[3.430s] test/test_io.py [32m.[0m[32m.[0m[33m                                                       [ 28%][0m
+[3.444s] test/test_parse.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m                                             [ 92%][0m
+[3.528s] test/test_pep257.py [32m.[0m[33m                                                    [100%][0m
+[3.528s] 
+[3.529s] [33m=============================== warnings summary ===============================[0m
+[3.529s] test/test_flake8.py: 14 warnings
+[3.529s]   Warning: This process (pid=6655) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[3.529s] 
+[3.529s] -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[3.530s] - generated xml file: /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml -
+[3.530s] [33m================== [32m13 passed[0m, [33m[1m1 skipped[0m, [33m[1m14 warnings[0m[33m in 1.82s[0m[33m ==================[0m
+[3.741s] Invoked command in '/home/saito/ros2_ws/src/twist_stdin_bridge' returned '0': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml --junit-prefix=twist_stdin_bridge -o cache_dir=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/.pytest_cache PYTHONDONTWRITEBYTECODE=1 /usr/bin/python3 -m pytest

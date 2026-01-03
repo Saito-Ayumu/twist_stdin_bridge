@@ -1,3 +1,0 @@
-[console_scripts]
-stdin_to_twist = twist_stdin_bridge.stdin_to_twist:main
-twist_to_stdout = twist_stdin_bridge.twist_to_stdout:main

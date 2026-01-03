@@ -1,0 +1,16 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.12.3, pytest-7.4.4, pluggy-1.4.0
+cachedir: build/twist_stdin_bridge/.pytest_cache
+rootdir: /home/saito/ros2_ws/src/twist_stdin_bridge
+plugins: launch-testing-3.4.9, ament-lint-0.17.3, ament-pep257-0.17.3, ament-flake8-0.17.3, launch-testing-ros-0.26.10, ament-xmllint-0.17.3, ament-copyright-0.17.3, cov-4.1.0, colcon-core-0.20.1
+[1mcollecting ... [0m[1m
+collecting 0 items                                                             [0m[1m
+collected 14 items                                                             [0m
+
+test/test_copyright.py [33ms[0m[32m                                                 [  7%][0m
+test/test_flake8.py [32m.[0m[33m                                                    [ 14%][0m
+test/test_io.py [32m.[0m[32m.[0m[33m                                                       [ 28%][0m
+test/test_parse.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m                                             [ 92%][0m
+test/test_pep257.py [32m.[0m[33m                                                    [100%][0m
+- generated xml file: /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/pytest.xml -
+[33m================== [32m13 passed[0m, [33m[1m1 skipped[0m, [33m[1m14 warnings[0m[33m in 1.82s[0m[33m ==================[0m
