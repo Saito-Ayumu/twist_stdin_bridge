@@ -51,4 +51,3 @@ def main(args=None) -> None:
     finally:
         node.destroy_node()
         rclpy.try_shutdown()
-

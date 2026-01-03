@@ -74,4 +74,3 @@ def main(args=None) -> None:
         rclpy.try_shutdown()
 
     raise SystemExit(code)
-
