@@ -41,10 +41,13 @@ class TwistToStdout(Node):
 def main(args=None) -> None:
     rclpy.init(args=args)
     node = TwistToStdout()
-    try:
-        rclpy.spin(node)
+        try:
+            rclpy.spin(node)
     except KeyboardInterrupt:
         pass
+    except Exception:
+        if rclpy.ok():
+            raise
     finally:
         node.destroy_node()
         if rclpy.ok():

@@ -30,6 +30,27 @@ STDIN から Twist メッセージを読み取り、`/cmd_vel` に publish し�
 
 ## 以降の例ではワークスペースを `~/ros2_ws` としています。自分の環境のワークスペース名に読み替えてください。
 
+## インストール / ビルド
+
+例としてワークスペースを `~/ros2_ws` とします（名前は任意）。
+
+```bash
+mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws/src
+git clone https://github.com/Saito-Ayumu/twist_stdin_bridge.git
+cd ~/ros2_ws
+```
+
+# 依存関係
+rosdep update
+rosdep install -i --from-path src --rosdistro $ROS_DISTRO -y
+
+# ビルド
+source /opt/ros/$ROS_DISTRO/setup.bash
+colcon build --symlink-install
+source install/setup.bash
+
+
 ## 使い方
 
 このパッケージは 2 つのノードを使います。  
