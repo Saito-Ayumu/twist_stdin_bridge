@@ -34,7 +34,6 @@ def lines_to_twists(lines: Iterable[str], err_stream: TextIO) -> Iterator[Twist]
         if msg is not None:
             yield msg
 
-
 class StdinToTwist(Node):
     """Read STDIN and publish Twist messages."""
 
@@ -51,17 +50,15 @@ class StdinToTwist(Node):
             rclpy.spin_once(self, timeout_sec=0.1)
 
     def run(self) -> int:
-    """Read STDIN lines and publish Twist messages until EOF."""
-    self.wait_for_subscriber(timeout_sec=2.0)
+        """Read STDIN lines and publish Twist messages until EOF."""
+        self.wait_for_subscriber(timeout_sec=1.0)
 
-    for msg in lines_to_twists(sys.stdin, sys.stderr):
-        self._pub.publish(msg)
-        rclpy.spin_once(self, timeout_sec=0.01)
+        for msg in lines_to_twists(sys.stdin, sys.stderr):
+            self._pub.publish(msg)
+            rclpy.spin_once(self, timeout_sec=0.0)
 
-    # allow last message to be delivered
-    for _ in range(10):
-        rclpy.spin_once(self, timeout_sec=0.02)
-    return 0
+        time.sleep(0.2)
+        return 0
 
 
 def main(args=None) -> None:
@@ -73,9 +70,6 @@ def main(args=None) -> None:
         code = 0
     finally:
         node.destroy_node()
-        if rclpy.ok():
-            try:
-                rclpy.shutdown()
-            except Exception:
-                pass
+        rclpy.try_shutdown()
     raise SystemExit(code)
+
