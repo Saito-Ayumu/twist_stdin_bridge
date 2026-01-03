@@ -44,9 +44,13 @@ def main(args=None) -> None:
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
+    except Exception as e:
+        # ExternalShutdownException を import せずに抑える場合
+        if e.__class__.__name__ == "ExternalShutdownException":
+            pass
+        else:
+            raise
     finally:
         node.destroy_node()
         rclpy.try_shutdown()
 
-            except Exception:
-                pass

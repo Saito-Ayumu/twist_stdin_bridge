@@ -50,16 +50,18 @@ class StdinToTwist(Node):
         while self._pub.get_subscription_count() == 0 and (time.time() - start) < timeout_sec:
             rclpy.spin_once(self, timeout_sec=0.1)
 
-    def run(self) -> int:
-        """Read STDIN lines and publish Twist messages until EOF."""
-        self.wait_for_subscriber(timeout_sec=1.0)
+def run(self) -> int:
+    """Read STDIN lines and publish Twist messages until EOF."""
+    self.wait_for_subscriber(timeout_sec=2.0)
 
-        for msg in lines_to_twists(sys.stdin, sys.stderr):
-            self._pub.publish(msg)
-            rclpy.spin_once(self, timeout_sec=0.0)
+    for msg in lines_to_twists(sys.stdin, sys.stderr):
+        self._pub.publish(msg)
+        rclpy.spin_once(self, timeout_sec=0.01)
 
-        time.sleep(0.2)
-        return 0
+    # allow last message to be delivered
+    for _ in range(10):
+        rclpy.spin_once(self, timeout_sec=0.02)
+    return 0
 
 
 def main(args=None) -> None:
