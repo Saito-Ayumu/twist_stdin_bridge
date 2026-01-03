@@ -45,7 +45,7 @@ def main(args=None) -> None:
     except KeyboardInterrupt:
         pass
     except Exception as e:
-        if e.__class__.__name__ == "ExternalShutdownException":
+        if e.__class__.__name__ == 'ExternalShutdownException':
             pass
         else:
             raise

@@ -34,6 +34,7 @@ def lines_to_twists(lines: Iterable[str], err_stream: TextIO) -> Iterator[Twist]
         if msg is not None:
             yield msg
 
+
 class StdinToTwist(Node):
     """Read STDIN and publish Twist messages."""
 
