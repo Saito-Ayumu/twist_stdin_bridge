@@ -2,7 +2,6 @@
 # SPDX-FileCopyrightText: 2025 Ayumu Saito
 # SPDX-License-Identifier: BSD-3-Clause
 
-
 from setuptools import setup
 
 package_name = 'twist_stdin_bridge'
