@@ -23,7 +23,7 @@ STDIN から Twist メッセージを読み取り、`/cmd_vel` に publish し�
 - Subscribe 先: `/cmd_vel`（`geometry_msgs/msg/Twist`）
 - 出力（STDOUT）: `vx,wz` + 改行（数値のみの CSV）
 
-# 以降の例ではワークスペースを `~/ros2_ws` としています。自分の環境のワークスペース名に読み替えてください。
+## 以降の例ではワークスペースを `~/ros2_ws` としています。自分の環境のワークスペース名に読み替えてください。
 
 ## 使い方
 
