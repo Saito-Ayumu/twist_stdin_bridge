@@ -8,17 +8,17 @@ from geometry_msgs.msg import Twist
 import rclpy
 from rclpy.node import Node
 
-from .parse import Vw, format_vw_csv
+from .parse import format_vw_csv, Vw
 
 
 def twist_to_vw(msg: Twist) -> Vw:
-    """Convert Twist message to (vx, wz)."""
+    """Convert Twist to (vx, wz)."""
     return Vw(float(msg.linear.x), float(msg.angular.z))
 
 
 def twist_to_csv_line(msg: Twist) -> str:
-    """Format Twist message as one CSV line (numbers only)."""
-    return format_vw_csv(twist_to_vw(msg))
+    """Format Twist as one CSV line (numbers only)."""
+    return format_vw_csv(twist_to_vw(msg)).rstrip('\n')
 
 
 class TwistToStdout(Node):
@@ -29,7 +29,7 @@ class TwistToStdout(Node):
         self.declare_parameter('topic', '/cmd_vel')
         topic = self.get_parameter('topic').get_parameter_value().string_value
 
-        # Keep a reference to subscription to avoid garbage collection.
+        # Keep reference to avoid garbage collection.
         self._sub = self.create_subscription(Twist, topic, self.cb, 10)
 
     def cb(self, msg: Twist) -> None:
@@ -51,6 +51,4 @@ def main(args=None) -> None:
             try:
                 rclpy.shutdown()
             except Exception:
-                # Avoid errors when shutdown is called twice in some environments.
                 pass
-

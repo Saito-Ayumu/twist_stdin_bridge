@@ -14,7 +14,7 @@ from .parse import parse_vw_line
 
 
 def line_to_twist(line: str, err_stream: TextIO) -> Optional[Twist]:
-    """Convert one input line to a Twist message. Return None on parse error."""
+    """Convert one line to Twist. Return None on parse error."""
     try:
         vw = parse_vw_line(line)
     except ValueError as e:
@@ -28,7 +28,7 @@ def line_to_twist(line: str, err_stream: TextIO) -> Optional[Twist]:
 
 
 def lines_to_twists(lines: Iterable[str], err_stream: TextIO) -> Iterator[Twist]:
-    """Convert multiple lines to Twist messages, skipping invalid lines."""
+    """Convert lines to Twist messages, skipping invalid lines."""
     for line in lines:
         msg = line_to_twist(line, err_stream)
         if msg is not None:
@@ -36,7 +36,7 @@ def lines_to_twists(lines: Iterable[str], err_stream: TextIO) -> Iterator[Twist]
 
 
 class StdinToTwist(Node):
-    """Read STDIN and publish Twist messages to a topic."""
+    """Read STDIN and publish Twist messages."""
 
     def __init__(self) -> None:
         super().__init__('stdin_to_twist')
@@ -58,7 +58,6 @@ class StdinToTwist(Node):
             self._pub.publish(msg)
             rclpy.spin_once(self, timeout_sec=0.0)
 
-        # Give DDS a short time to flush outgoing data for short-lived runs.
         time.sleep(0.2)
         return 0
 
@@ -78,4 +77,3 @@ def main(args=None) -> None:
             except Exception:
                 pass
     raise SystemExit(code)
-
