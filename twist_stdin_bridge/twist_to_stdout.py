@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # SPDX-FileCopyrightText: 2025 Ayumu Saito
 # SPDX-License-Identifier: BSD-3-Clause
 
@@ -7,33 +8,49 @@ from geometry_msgs.msg import Twist
 import rclpy
 from rclpy.node import Node
 
-from .parse import format_vw_csv, Vw
+from .parse import Vw, format_vw_csv
+
+
+def twist_to_vw(msg: Twist) -> Vw:
+    """Convert Twist message to (vx, wz)."""
+    return Vw(float(msg.linear.x), float(msg.angular.z))
+
+
+def twist_to_csv_line(msg: Twist) -> str:
+    """Format Twist message as one CSV line (numbers only)."""
+    return format_vw_csv(twist_to_vw(msg))
 
 
 class TwistToStdout(Node):
+    """Subscribe Twist and print it to STDOUT as CSV."""
 
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__('twist_to_stdout')
         self.declare_parameter('topic', '/cmd_vel')
         topic = self.get_parameter('topic').get_parameter_value().string_value
-        self.create_subscription(Twist, topic, self.cb, 10)
+
+        # Keep a reference to subscription to avoid garbage collection.
+        self._sub = self.create_subscription(Twist, topic, self.cb, 10)
 
     def cb(self, msg: Twist) -> None:
         """Write Twist values to STDOUT as CSV (numbers only)."""
-        vw = Vw(float(msg.linear.x), float(msg.angular.z))
-        sys.stdout.write(format_vw_csv(vw))
+        sys.stdout.write(twist_to_csv_line(msg) + '\n')
         sys.stdout.flush()
 
 
-def main() -> None:
-    rclpy.init()
+def main(args=None) -> None:
+    rclpy.init(args=args)
     node = TwistToStdout()
     try:
-        try:
-            rclpy.spin(node)
-        except KeyboardInterrupt:
-            pass
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
     finally:
         node.destroy_node()
         if rclpy.ok():
-            rclpy.shutdown()
+            try:
+                rclpy.shutdown()
+            except Exception:
+                # Avoid errors when shutdown is called twice in some environments.
+                pass
+

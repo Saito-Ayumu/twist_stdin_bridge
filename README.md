@@ -23,6 +23,8 @@ STDIN から Twist メッセージを読み取り、`/cmd_vel` に publish し�
 - Subscribe 先: `/cmd_vel`（`geometry_msgs/msg/Twist`）
 - 出力（STDOUT）: `vx,wz` + 改行（数値のみの CSV）
 
+# 以降の例ではワークスペースを `~/ros2_ws` としています。自分の環境のワークスペース名に読み替えてください。
+
 ## 使い方
 
 このパッケージは 2 つのノードを使います。  
@@ -57,4 +59,9 @@ $ printf "bad\n0.1 0.2\n" | ros2 run twist_stdin_bridge stdin_to_twist 1>/dev/nu
 ### STDERR の出力例
 ```text
 parse_error: need two values: vx wz
+```
 
+## ライセンス / 著作権
+- SPDX-License-Identifier: BSD-3-Clause
+- SPDX-FileCopyrightText: 2025 Ayumu Saito
+- LICENSE ファイルを参照してください。
