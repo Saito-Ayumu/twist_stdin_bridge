@@ -7,7 +7,6 @@ import sys
 from geometry_msgs.msg import Twist
 import rclpy
 from rclpy.node import Node
-from rclpy.executors import ExternalShutdownException
 
 from .parse import format_vw_csv, Vw
 
@@ -45,7 +44,6 @@ def main(args=None) -> None:
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-    except (KeyboardInterrupt, ExternalShutdownException):
         pass
     finally:
         node.destroy_node()
@@ -54,4 +52,3 @@ def main(args=None) -> None:
                 rclpy.shutdown()
             except Exception:
                 pass
-            rclpy.try_shutdown
