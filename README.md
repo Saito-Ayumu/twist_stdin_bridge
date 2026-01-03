@@ -1,3 +1,8 @@
+- このソフトウェアパッケージは，3条項BSDライセンスの下，再頒
+布および使用が許可されます．
+- 本パッケージは，第三者の著作物コードを含みません．
+- © 2025 Ayumu Saito
+
 # twist_stdin_bridge
 
 `twist_stdin_bridge` は、UNIX の標準入出力（パイプ）と ROS 2 の `geometry_msgs/msg/Twist` を橋渡しし、ROS 2 ノードを新しく書かなくても `/cmd_vel` を入出力できるようにします。
@@ -61,7 +66,3 @@ $ printf "bad\n0.1 0.2\n" | ros2 run twist_stdin_bridge stdin_to_twist 1>/dev/nu
 parse_error: need two values: vx wz
 ```
 
-## ライセンス / 著作権
-- SPDX-License-Identifier: BSD-3-Clause
-- SPDX-FileCopyrightText: 2025 Ayumu Saito
-- LICENSE ファイルを参照してください。
