@@ -1,0 +1,44 @@
+[2.398s] Invoking command in '/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge': PYTHONPATH=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build
+[3.018s] running develop
+[3.436s] Removing /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist-stdin-bridge.egg-link (link to .)
+[3.501s] Invoked command in '/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge' returned '0': PYTHONPATH=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build
+[3.504s] Invoking command in '/home/saito/ros2_ws/src/twist_stdin_bridge': PYTHONPATH=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/twist_stdin_bridge build --build-base /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build install --record /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/install.log --single-version-externally-managed install_data --force
+[4.012s] running egg_info
+[4.045s] writing build/twist_stdin_bridge/twist_stdin_bridge.egg-info/PKG-INFO
+[4.046s] writing dependency_links to build/twist_stdin_bridge/twist_stdin_bridge.egg-info/dependency_links.txt
+[4.046s] writing entry points to build/twist_stdin_bridge/twist_stdin_bridge.egg-info/entry_points.txt
+[4.047s] writing requirements to build/twist_stdin_bridge/twist_stdin_bridge.egg-info/requires.txt
+[4.048s] writing top-level names to build/twist_stdin_bridge/twist_stdin_bridge.egg-info/top_level.txt
+[4.121s] reading manifest file 'build/twist_stdin_bridge/twist_stdin_bridge.egg-info/SOURCES.txt'
+[4.121s] adding license file 'LICENSE'
+[4.122s] writing manifest file 'build/twist_stdin_bridge/twist_stdin_bridge.egg-info/SOURCES.txt'
+[4.122s] running build
+[4.122s] running build_py
+[4.123s] creating /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build
+[4.124s] creating /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib
+[4.124s] creating /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge
+[4.124s] copying twist_stdin_bridge/twist_to_stdout.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge
+[4.124s] copying twist_stdin_bridge/stdin_to_twist.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge
+[4.124s] copying twist_stdin_bridge/__init__.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge
+[4.125s] copying twist_stdin_bridge/parse.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge
+[4.125s] running install
+[4.139s] running install_lib
+[4.170s] creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge
+[4.171s] copying /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge/twist_to_stdout.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge
+[4.171s] copying /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge/stdin_to_twist.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge
+[4.172s] copying /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge/__init__.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge
+[4.172s] copying /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge/parse.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge
+[4.173s] byte-compiling /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge/twist_to_stdout.py to twist_to_stdout.cpython-312.pyc
+[4.175s] byte-compiling /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge/stdin_to_twist.py to stdin_to_twist.cpython-312.pyc
+[4.176s] byte-compiling /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge/__init__.py to __init__.cpython-312.pyc
+[4.177s] byte-compiling /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge/parse.py to parse.cpython-312.pyc
+[4.178s] running install_data
+[4.178s] copying resource/twist_stdin_bridge -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index/resource_index/packages
+[4.178s] copying package.xml -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/twist_stdin_bridge
+[4.179s] running install_egg_info
+[4.217s] Copying build/twist_stdin_bridge/twist_stdin_bridge.egg-info to /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge-0.0.1-py3.12.egg-info
+[4.221s] running install_scripts
+[4.461s] Installing stdin_to_twist script to /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/twist_stdin_bridge
+[4.462s] Installing twist_to_stdout script to /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/twist_stdin_bridge
+[4.462s] writing list of installed files to '/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/install.log'
+[4.525s] Invoked command in '/home/saito/ros2_ws/src/twist_stdin_bridge' returned '0': PYTHONPATH=/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/twist_stdin_bridge build --build-base /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build install --record /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/install.log --single-version-externally-managed install_data --force

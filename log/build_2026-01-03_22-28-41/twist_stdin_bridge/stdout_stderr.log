@@ -1,0 +1,40 @@
+running develop
+Removing /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist-stdin-bridge.egg-link (link to .)
+running egg_info
+writing build/twist_stdin_bridge/twist_stdin_bridge.egg-info/PKG-INFO
+writing dependency_links to build/twist_stdin_bridge/twist_stdin_bridge.egg-info/dependency_links.txt
+writing entry points to build/twist_stdin_bridge/twist_stdin_bridge.egg-info/entry_points.txt
+writing requirements to build/twist_stdin_bridge/twist_stdin_bridge.egg-info/requires.txt
+writing top-level names to build/twist_stdin_bridge/twist_stdin_bridge.egg-info/top_level.txt
+reading manifest file 'build/twist_stdin_bridge/twist_stdin_bridge.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/twist_stdin_bridge/twist_stdin_bridge.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build
+creating /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib
+creating /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge
+copying twist_stdin_bridge/twist_to_stdout.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge
+copying twist_stdin_bridge/stdin_to_twist.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge
+copying twist_stdin_bridge/__init__.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge
+copying twist_stdin_bridge/parse.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge
+running install
+running install_lib
+creating /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge
+copying /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge/twist_to_stdout.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge
+copying /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge/stdin_to_twist.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge
+copying /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge/__init__.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge
+copying /home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/build/lib/twist_stdin_bridge/parse.py -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge
+byte-compiling /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge/twist_to_stdout.py to twist_to_stdout.cpython-312.pyc
+byte-compiling /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge/stdin_to_twist.py to stdin_to_twist.cpython-312.pyc
+byte-compiling /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge/parse.py to parse.cpython-312.pyc
+running install_data
+copying resource/twist_stdin_bridge -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/ament_index/resource_index/packages
+copying package.xml -> /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/share/twist_stdin_bridge
+running install_egg_info
+Copying build/twist_stdin_bridge/twist_stdin_bridge.egg-info to /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/python3.12/site-packages/twist_stdin_bridge-0.0.1-py3.12.egg-info
+running install_scripts
+Installing stdin_to_twist script to /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/twist_stdin_bridge
+Installing twist_to_stdout script to /home/saito/ros2_ws/src/twist_stdin_bridge/install/twist_stdin_bridge/lib/twist_stdin_bridge
+writing list of installed files to '/home/saito/ros2_ws/src/twist_stdin_bridge/build/twist_stdin_bridge/install.log'
