@@ -3,6 +3,8 @@
 - 本パッケージは，第三者の著作物コードを含みません．
 - © 2025 Ayumu Saito
 
+[![ci](https://github.com/Saito-Ayumu/twist_stdin_bridge/actions/workflows/ci.yml/badge.svg)](https://github.com/Saito-Ayumu/twist_stdin_bridge/actions/workflows/ci.yml)
+
 # twist_stdin_bridge
 
 `twist_stdin_bridge` は、UNIX の標準入出力（パイプ）と ROS 2 の `geometry_msgs/msg/Twist` を橋渡しし、ROS 2 ノードを新しく書かなくても `/cmd_vel` を入出力できるようにします。
