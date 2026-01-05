@@ -30,62 +30,69 @@ STDIN から Twist メッセージを読み取り、`/cmd_vel` に publish し�
 - Subscribe 先: `/cmd_vel`（`geometry_msgs/msg/Twist`）
 - 出力（STDOUT）: `vx,wz` + 改行（数値のみの CSV）
 
-## 以降の例ではワークスペースを `~/ros2_ws` としています。自分の環境のワークスペース名に読み替えてください。
-
-## インストール / ビルド
-
-例としてワークスペースを `~/ros2_ws` とします（名前は任意）。
+※ 以下のコマンド例ではワークスペースを `~/ros2_ws` とします（自分の環境のワークスペース名に読み替えてください）。
 
 ```bash
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
 git clone https://github.com/Saito-Ayumu/twist_stdin_bridge.git
 cd ~/ros2_ws
-```
 
-# 依存関係
 rosdep update
-rosdep install -i --from-path src --rosdistro $ROS_DISTRO -y
+rosdep install -i --from-path src --rosdistro ${ROS_DISTRO:-humble} -y
 
-# ビルド
-source /opt/ros/$ROS_DISTRO/setup.bash
+source /opt/ros/${ROS_DISTRO:-humble}/setup.bash
 colcon build --symlink-install
 source install/setup.bash
-
+```
 
 ## 使い方
 
-このパッケージは 2 つのノードを使います。  
+このパッケージは 2 つのノードを使います。
 ターミナルAで `/cmd_vel` を表示しながら、別のターミナルBから `/cmd_vel` に送信します。
 
 ### ターミナルA（表示側）
+
 ```bash
-$ source ~/ros2_ws/install/setup.bash
-$ ros2 run twist_stdin_bridge twist_to_stdout
+source ~/ros2_ws/install/setup.bash
+ros2 run twist_stdin_bridge twist_to_stdout
 ```
 
 ### ターミナルB（送信側）
+
 別のターミナルを開いて、以下を実行して数値を入力します（各行で Enter）:
+
 ```bash
-$ source ~/ros2_ws/install/setup.bash
-$ ros2 run twist_stdin_bridge stdin_to_twist
+source ~/ros2_ws/install/setup.bash
+ros2 run twist_stdin_bridge stdin_to_twist
 0.1 0.2
 0.0 -0.5
 ```
 
 ### ターミナルAの出力例
+
 ```text
 0.100000,0.200000
 0.000000,-0.500000
 ```
 
 ### パースエラー例（ターミナルBの STDERR に出ます）
+
 ```bash
-$ printf "bad\n0.1 0.2\n" | ros2 run twist_stdin_bridge stdin_to_twist 1>/dev/null
+printf "bad\n0.1 0.2\n" | ros2 run twist_stdin_bridge stdin_to_twist 1>/dev/null
 ```
 
 ### STDERR の出力例
+
 ```text
 parse_error: need two values: vx wz
 ```
 
+## テスト
+
+※ テストでは ROS 2 のトピック `/cmd_vel` を `ros2 topic echo` でファイルに保存し、`grep` で内容を確認します（標準入出力ではなくトピックの入出力を検証します）。
+
+```bash
+source ~/ros2_ws/install/setup.bash
+bash -xv src/twist_stdin_bridge/test/test.bash ~
+```
