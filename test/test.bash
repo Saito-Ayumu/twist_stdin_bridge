@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2025 Ayumu Saito
 # SPDX-License-Identifier: BSD-3-Clause
 
-set -eu
+set +u
 
 dir="$HOME"
 [ "${1:-}" != "" ] && dir="$1"
